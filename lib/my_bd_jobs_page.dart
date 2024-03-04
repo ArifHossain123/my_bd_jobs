@@ -22,6 +22,12 @@ class _HomePageState extends State<HomePage> {
           ),
         ),
         actions: <Widget>[
+          const CircleAvatar(
+            radius: 25,
+            backgroundImage: AssetImage(
+              'assets/images/Photo_of_Arif_Hossain.jpg',
+            ),
+          ),
           IconButton(
             onPressed: () {},
             icon: const Icon(
@@ -41,14 +47,6 @@ class _HomePageState extends State<HomePage> {
             icon: const Icon(
               Icons.search,
               color: Colors.white,
-            ),
-          ),
-          Container(decoration: BoxDecoration(shape: BoxShape.circle,),
-            child: IconButton(
-              onPressed: () {},
-              icon: Image.asset('assets/images/Photo_of_Arif_Hossain.jpg'),
-                color: Colors.white,
-              
             ),
           ),
         ],
