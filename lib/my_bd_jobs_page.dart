@@ -22,7 +22,6 @@ class _HomePageState extends State<HomePage> {
           ),
         ),
         actions: <Widget>[
-          
           IconButton(
             onPressed: () {},
             icon: const Icon(
@@ -44,11 +43,19 @@ class _HomePageState extends State<HomePage> {
               color: Colors.white,
             ),
           ),
-          const CircleAvatar(
-            radius: 25,
-            backgroundImage: AssetImage(
-              'assets/images/Photo_of_Arif_Hossain.jpg',
-            ),
+          Column(
+            children: <Widget>[
+              GestureDetector(
+                onTap: () {},
+                child: const CircleAvatar(
+                  radius: 15,
+                  backgroundColor: Colors.transparent,
+                  backgroundImage: AssetImage(
+                    'assets/images/Photo_of_Arif_Hossain.jpg',
+                  ),
+                ),
+              ),
+            ],
           ),
         ],
         backgroundColor: const Color.fromARGB(255, 174, 8, 110),
