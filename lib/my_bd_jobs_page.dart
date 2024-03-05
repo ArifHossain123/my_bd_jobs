@@ -65,9 +65,9 @@ class _HomePageState extends State<HomePage> {
         ],
         backgroundColor: const Color.fromARGB(255, 174, 8, 110),
       ),
-      body: const Row(
+      body: Row(
         children: <Widget>[
-          Column(
+          const Column(
             children: <Widget>[
               Text.rich(
                 TextSpan(
@@ -87,7 +87,23 @@ class _HomePageState extends State<HomePage> {
               ),
             ],
           ),
-          Column(),
+          Column(
+            children: <Widget>[
+              Container(
+                height: 200,
+                width: 200,
+                alignment: Alignment.topRight,
+                padding: EdgeInsets.all(20),
+                child: ElevatedButton(
+                  onPressed: () {},
+                  child: Text(
+                    'Get Bdjobs Pro',
+                    style: TextStyle(color: Colors.red,),
+                  ),
+                ),
+              ),
+            ],
+          ),
         ],
       ),
     );
