@@ -45,7 +45,12 @@ class _HomePageState extends State<HomePage> {
           ),
           Column(
             children: <Widget>[
-              GestureDetector(
+              const Padding(
+                padding: EdgeInsets.only(
+                  top: 10,
+                ),
+              ),
+              InkWell(
                 onTap: () {},
                 child: const CircleAvatar(
                   radius: 15,
@@ -60,67 +65,31 @@ class _HomePageState extends State<HomePage> {
         ],
         backgroundColor: const Color.fromARGB(255, 174, 8, 110),
       ),
-      body: _pages[_selectedIndex],
-      bottomNavigationBar: BottomNavigationBar(
-        items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: 'Home',
+      body: const Row(
+        children: <Widget>[
+          Column(
+            children: <Widget>[
+              Text.rich(
+                TextSpan(
+                  style: TextStyle(
+                    fontSize: 25,
+                    color: Colors.black,
+                  ),
+                  text: '  Current Plan',
+                  children: [
+                    TextSpan(
+                      text: '\n  Free',
+                      style: TextStyle(
+                          color: Colors.red, fontWeight: FontWeight.bold),
+                    )
+                  ],
+                ),
+              ),
+            ],
           ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.school),
-            label: 'Learning',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.question_answer),
-            label: 'Question',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.account_box),
-            label: 'MyBdJobs',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.apps),
-            label: 'More',
-          ),
+          Column(),
         ],
-        currentIndex: _selectedIndex,
-        selectedItemColor: Color.fromARGB(
-          255,
-          154,
-          28,
-          49,
-        ),
-        onTap: _onItemTapped,
-        unselectedItemColor: Colors.black,
       ),
     );
   }
-
-  int _selectedIndex = 0;
-
-  void _onItemTapped(int index) {
-    setState(() {
-      _selectedIndex = index;
-    });
-  }
-
-  final List<Widget> _pages = [
-    // const MyWidget(),
-    const Center(
-      child: Text('My widget 2'),
-    ),
-    const Center(
-      child: Text('My widget 3'),
-    ),
-    const Center(
-      child: Text('My widget 4'),
-    ),
-    const Center(
-      child: Text('My widget 5'),
-    ),
-    const Center(
-      child: Text('My widget 4'),
-    ),
-  ];
 }
