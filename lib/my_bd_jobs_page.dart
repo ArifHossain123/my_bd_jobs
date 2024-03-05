@@ -65,51 +65,65 @@ class _HomePageState extends State<HomePage> {
         ],
         backgroundColor: const Color.fromARGB(255, 174, 8, 110),
       ),
-      body: Row(
-        children: <Widget>[
-          const Column(
+      body: Column(
+        children: [
+          Row(
             children: <Widget>[
-              Text.rich(
-                TextSpan(
-                  style: TextStyle(
-                    fontSize: 25,
-                    color: Colors.black,
-                  ),
-                  text: '  Current Plan',
-                  children: [
+              const Column(
+                children: <Widget>[
+                  Text.rich(
                     TextSpan(
-                      text: '\n  Free',
                       style: TextStyle(
-                          color: Colors.red, fontWeight: FontWeight.bold),
+                        fontSize: 25,
+                        color: Colors.black,
+                      ),
+                      text: '  Current Plan',
+                      children: [
+                        TextSpan(
+                          text: '\n  Free',
+                          style: TextStyle(
+                              color: Colors.red, fontWeight: FontWeight.bold),
+                        ),
+                      ],
                     ),
-                  ],
-                ),
+                  ),
+                ],
               ),
-            ],
-          ),
-          Column(
-            children: <Widget>[
-              Container(
+              Column(
+                children: <Widget>[
+                  Container(
+                    alignment: Alignment.topCenter,
+                    padding: const EdgeInsets.all(10),
+                    child: OutlinedButton.icon(
+                      style: OutlinedButton.styleFrom(
+                          minimumSize: (const Size(210, 50)),
+                          foregroundColor: const Color.fromARGB(255, 235, 101, 89),
+                          side: const BorderSide(
+                              color:  Color.fromARGB(255, 251, 170, 164),
+                              width: 2),
+                            
+                          //  onPrimary: Color.fromARGB(255, 187, 53, 53),
+                          ),
+                          icon: const Icon(Icons.forward),
+                          label:const Text(
+                        'Get Bdjobs Pro',
+                        style: TextStyle(fontSize: 20),
+                      ), 
+                      onPressed: () {},
+                     
+                    ),
+                  ),
+                ],
                 
-                alignment: Alignment.topCenter,
-                padding: const EdgeInsets.all(10),
-                child: ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    minimumSize: (Size(200, 50)),
-                  ),
-                  onPressed:(){},
-                  child: const Text(
-                    'Get Bdjobs Pro',
-                    style: TextStyle(
-                      color: Colors.red,
-                    ),
-                  ),
-                ),
               ),
             ],
+            
           ),
+          Row(),
         ],
+        
       ),
+      
     );
   }
 }
