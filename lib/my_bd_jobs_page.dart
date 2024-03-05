@@ -81,7 +81,7 @@ class _HomePageState extends State<HomePage> {
                       text: '\n  Free',
                       style: TextStyle(
                           color: Colors.red, fontWeight: FontWeight.bold),
-                    )
+                    ),
                   ],
                 ),
               ),
@@ -90,15 +90,19 @@ class _HomePageState extends State<HomePage> {
           Column(
             children: <Widget>[
               Container(
-                height: 200,
-                width: 200,
-                alignment: Alignment.topRight,
-                padding: EdgeInsets.all(20),
+                
+                alignment: Alignment.topCenter,
+                padding: const EdgeInsets.all(10),
                 child: ElevatedButton(
-                  onPressed: () {},
-                  child: Text(
+                  style: ElevatedButton.styleFrom(
+                    minimumSize: (Size(200, 50)),
+                  ),
+                  onPressed:(){},
+                  child: const Text(
                     'Get Bdjobs Pro',
-                    style: TextStyle(color: Colors.red,),
+                    style: TextStyle(
+                      color: Colors.red,
+                    ),
                   ),
                 ),
               ),
