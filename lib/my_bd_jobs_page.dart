@@ -96,34 +96,53 @@ class _HomePageState extends State<HomePage> {
                     padding: const EdgeInsets.all(10),
                     child: OutlinedButton.icon(
                       style: OutlinedButton.styleFrom(
-                          minimumSize: (const Size(210, 50)),
-                          foregroundColor: const Color.fromARGB(255, 235, 101, 89),
-                          side: const BorderSide(
-                              color:  Color.fromARGB(255, 251, 170, 164),
-                              width: 2),
-                            
-                          //  onPrimary: Color.fromARGB(255, 187, 53, 53),
-                          ),
-                          icon: const Icon(Icons.forward),
-                          label:const Text(
+                        minimumSize: (const Size(210, 50)),
+                        foregroundColor:
+                            const Color.fromARGB(255, 235, 101, 89),
+                        side: const BorderSide(
+                            color: Color.fromARGB(255, 251, 170, 164),
+                            width: 2),
+
+                        //  onPrimary: Color.fromARGB(255, 187, 53, 53),
+                      ),
+                      icon: const Icon(Icons.forward),
+                      label: const Text(
                         'Get Bdjobs Pro',
                         style: TextStyle(fontSize: 20),
-                      ), 
+                      ),
                       onPressed: () {},
-                     
                     ),
                   ),
                 ],
-                
               ),
             ],
-            
           ),
-          Row(),
+          SizedBox(
+            height: 10,
+          ),
+          Row(
+            children: [
+              Column(
+                children: [
+                  Row(
+                    children: [
+                      Container(
+                        height: 50,
+                        width: 392,
+                        decoration: BoxDecoration(
+                            border: Border.all(width: 1, color: Colors.red),
+                            color: Color.fromARGB(162, 255, 220, 220)),
+                      ),
+                      Container()
+                    ],
+                  ),
+                ],
+              )
+            ],
+          ),
+          Row()
         ],
-        
       ),
-      
     );
   }
 }
