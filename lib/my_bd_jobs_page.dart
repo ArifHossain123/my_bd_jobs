@@ -117,7 +117,7 @@ class _HomePageState extends State<HomePage> {
               ),
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           Row(
@@ -130,8 +130,20 @@ class _HomePageState extends State<HomePage> {
                         height: 50,
                         width: 392,
                         decoration: BoxDecoration(
-                            border: Border.all(width: 1, color: Colors.red),
-                            color: Color.fromARGB(162, 255, 220, 220)),
+                          border: Border.all(
+                              width: 1,
+                              color: const Color.fromARGB(255, 220, 219, 219)),
+                          color: const Color.fromARGB(255, 250, 237, 237),
+                        ),
+                        padding: const EdgeInsets.only(left: 15, top: 7),
+                        child: const Text(
+                          'My Status',
+                          textAlign: TextAlign.left,
+                          style: TextStyle(
+                            color: Colors.red,
+                            fontSize: 22,
+                          ),
+                        ),
                       ),
                       Container()
                     ],
@@ -140,7 +152,7 @@ class _HomePageState extends State<HomePage> {
               )
             ],
           ),
-          Row()
+          const Row()
         ],
       ),
     );
