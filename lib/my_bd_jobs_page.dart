@@ -120,39 +120,81 @@ class _HomePageState extends State<HomePage> {
           const SizedBox(
             height: 10,
           ),
-          Row(
+          Column(
             children: [
+              Row(
+                children: [
+                  Column(
+                    children: [
+                      Row(
+                        children: [
+                          Container(
+                            height: 50,
+                            width: 392,
+                            decoration: BoxDecoration(
+                              border: Border.all(
+                                  width: 1,
+                                  color:
+                                      const Color.fromARGB(255, 220, 219, 219)),
+                              color: const Color.fromARGB(255, 250, 237, 237),
+                            ),
+                            padding: const EdgeInsets.only(left: 15, top: 7),
+                            child: const Text(
+                              'My Status',
+                              textAlign: TextAlign.left,
+                              style: TextStyle(
+                                color: Colors.red,
+                                fontSize: 22,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                  Column(
+                    children: <Widget>[],
+                  )
+                ],
+              ),
               Column(
                 children: [
-                  Row(
-                    children: [
-                      Container(
-                        height: 50,
-                        width: 392,
-                        decoration: BoxDecoration(
-                          border: Border.all(
-                              width: 1,
-                              color: const Color.fromARGB(255, 220, 219, 219)),
-                          color: const Color.fromARGB(255, 250, 237, 237),
-                        ),
-                        padding: const EdgeInsets.only(left: 15, top: 7),
-                        child: const Text(
-                          'My Status',
-                          textAlign: TextAlign.left,
-                          style: TextStyle(
-                            color: Colors.red,
-                            fontSize: 22,
-                          ),
-                        ),
+                  Container(
+                    height: 150,
+                    width: 150,
+                    decoration: const BoxDecoration(
+                      color: Colors.white60,
+                      borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(10),
+                        topRight: Radius.circular(10),
                       ),
-                      Container()
-                    ],
+                    ),
+                    child: GridView.builder(
+                        gridDelegate:
+                            const SliverGridDelegateWithFixedCrossAxisCount(
+                          crossAxisCount: 3,
+                          childAspectRatio: 1,
+                          mainAxisSpacing: 20,
+                        ),
+                        shrinkWrap: true,
+                        
+                        itemCount: 5,
+                        itemBuilder: (context, index) {
+                          return  Column(
+                            children: [Container(),
+                            const Icon(
+                                Icons.place,
+                                color: Colors.green,
+                                size: 20,
+                              ),
+                            ],
+                          );
+                        }),
                   ),
                 ],
               )
             ],
           ),
-          const Row()
         ],
       ),
     );
