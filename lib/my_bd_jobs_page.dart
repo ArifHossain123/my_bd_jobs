@@ -156,19 +156,43 @@ class _HomePageState extends State<HomePage> {
               ),
             ],
           ),
+          //Applied Jobs
           Container(
-            width: 100,
-            height: 70,
+            width: 150,
+            height: 100,
             decoration: BoxDecoration(
-              color: Colors.blue,
+              color: const Color.fromARGB(255, 222, 235, 245),
               borderRadius: BorderRadius.circular(15),
               boxShadow: [
                 BoxShadow(
                   color: Colors.grey.withOpacity(.8),
+                  spreadRadius: 2,
+                  blurRadius: 10,
+                  offset: const Offset(0, 3),
                 ),
               ],
             ),
-          )
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 10),
+              child: Column(mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
+                children: [ 
+                  Container(
+                    child: const Text(
+                      '0',
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 30,
+                      ),
+                    ),
+                    
+                  ),
+                
+                 
+                ],
+              ),
+            ),
+          ),
         ],
       ),
     );
