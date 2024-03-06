@@ -174,9 +174,10 @@ class _HomePageState extends State<HomePage> {
             ),
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 10),
-              child: Column(mainAxisAlignment: MainAxisAlignment.start,
-              crossAxisAlignment: CrossAxisAlignment.start,
-                children: [ 
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
                   Container(
                     child: const Text(
                       '0',
@@ -185,10 +186,21 @@ class _HomePageState extends State<HomePage> {
                         fontSize: 30,
                       ),
                     ),
-                    
                   ),
-                
-                 
+                  SizedBox(height: 10),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Container(
+                        child: Text(
+                          'Applied\nJobs',
+                        ),
+                      ),
+                      Icon(
+                        Icons.assignment_turned_in,
+                      )
+                    ],
+                  )
                 ],
               ),
             ),
