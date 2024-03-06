@@ -152,49 +152,23 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ],
                   ),
-                  Column(
-                    children: <Widget>[],
-                  )
                 ],
               ),
-              Column(
-                children: [
-                  Container(
-                    height: 150,
-                    width: 150,
-                    decoration: const BoxDecoration(
-                      color: Colors.white60,
-                      borderRadius: BorderRadius.only(
-                        topLeft: Radius.circular(10),
-                        topRight: Radius.circular(10),
-                      ),
-                    ),
-                    child: GridView.builder(
-                        gridDelegate:
-                            const SliverGridDelegateWithFixedCrossAxisCount(
-                          crossAxisCount: 3,
-                          childAspectRatio: 1,
-                          mainAxisSpacing: 20,
-                        ),
-                        shrinkWrap: true,
-                        
-                        itemCount: 5,
-                        itemBuilder: (context, index) {
-                          return  Column(
-                            children: [Container(),
-                            const Icon(
-                                Icons.place,
-                                color: Colors.green,
-                                size: 20,
-                              ),
-                            ],
-                          );
-                        }),
-                  ),
-                ],
-              )
             ],
           ),
+          Container(
+            width: 100,
+            height: 70,
+            decoration: BoxDecoration(
+              color: Colors.blue,
+              borderRadius: BorderRadius.circular(15),
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.grey.withOpacity(.8),
+                ),
+              ],
+            ),
+          )
         ],
       ),
     );
