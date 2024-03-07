@@ -273,11 +273,12 @@ class _HomePageState extends State<HomePage> {
                                   children: [
                                     Container(
                                       child: const Text(
-                                        'Shortlisted\nJobs',
+                                        'Applied\nJobs',
                                       ),
                                     ),
                                     const Icon(
                                       Icons.assignment_turned_in,
+                                      color:  Color.fromARGB(255, 174, 8, 110),
                                     )
                                   ],
                                 )
@@ -318,11 +319,12 @@ class _HomePageState extends State<HomePage> {
                                   children: [
                                     Container(
                                       child: const Text(
-                                        'Shortlisted\nJobs',
+                                        'Followed\nEmployer',
                                       ),
                                     ),
                                     const Icon(
-                                      Icons.assignment_turned_in,
+                                      Icons.business,
+                                      color: Color.fromARGB(255, 174, 8, 110),
                                     )
                                   ],
                                 )
@@ -364,11 +366,12 @@ class _HomePageState extends State<HomePage> {
                                   children: [
                                     Container(
                                       child: const Text(
-                                        'Shortlisted\nJobs',
+                                        'Emailed\nResume',
                                       ),
                                     ),
                                     const Icon(
-                                      Icons.assignment_turned_in,
+                                      Icons.send,
+                                      color:  Color.fromARGB(255, 174, 8, 110),
                                     )
                                   ],
                                 )
@@ -409,11 +412,12 @@ class _HomePageState extends State<HomePage> {
                                   children: [
                                     Container(
                                       child: const Text(
-                                        'Shortlisted\nJobs',
+                                        'Favorite\nSearch',
                                       ),
                                     ),
                                     const Icon(
-                                      Icons.assignment_turned_in,
+                                      Icons.favorite,
+                                      color:  Color.fromARGB(255, 174, 8, 110),
                                     )
                                   ],
                                 )
@@ -457,7 +461,8 @@ class _HomePageState extends State<HomePage> {
                                   ),
                                 ),
                                 const Icon(
-                                  Icons.assignment_turned_in,
+                                  Icons.star,
+                                  color:  Color.fromARGB(255, 174, 8, 110),
                                 )
                               ],
                             )
