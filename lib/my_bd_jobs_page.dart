@@ -267,51 +267,59 @@ class _HomePageState extends State<HomePage> {
             height: 10,
           ),
           ListView(
-            children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Container(
-                    height: 50,
-                    width: 50,
-                    child: Text('AHHHJ'),
-                    decoration: BoxDecoration(color: Colors.amber),
-                  ),
-                  Container(
-                    height: 50,
-                    width: 50,
-                    child: Text('AHHHJ'),
-                    decoration: BoxDecoration(color: Colors.amber),
-                  ),
-                  Container(
-                    height: 50,
-                    width: 50,
-                    child: Text('AHHHJ'),
-                    decoration: BoxDecoration(color: Colors.amber),
-                  ),
-                  Container(
-                    height: 50,
-                    width: 50,
-                    child: Text('AHHHJ'),
-                    decoration: BoxDecoration(color: Colors.amber),
-                  ),
-                  Container(
-                    height: 50,
-                    width: 50,
-                    child: Text('AHHHJ'),
-                    decoration: BoxDecoration(color: Colors.amber),
-                  ),
-                  Container(
-                    height: 50,
-                    width: 50,
-                    child: Text('AHHHJ'),
-                    decoration: BoxDecoration(color: Colors.amber),
-                  ),
-                ],
-              ),
-            ],
-          ),
+              physics: NeverScrollableScrollPhysics(),
+              shrinkWrap: true,
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Column(
+                      children: [
+                        Container(
+                          height:110,
+                          width: 110,
+                          child: Text('AHHHJ'),
+                          decoration: BoxDecoration(color: Colors.amber),
+                        ),
+                        SizedBox(height: 10,),
+                        Container(
+                          height: 110,
+                          width: 110,
+                          child: Text('AHHHJ'),
+                          decoration: BoxDecoration(color: Colors.amber),
+                        ),
+                      ],
+                    ),
+                    Column(
+                      children: [
+                        Container(
+                          height: 110,
+                          width: 110,
+                          child: Text('AHHHJ'),
+                          decoration: BoxDecoration(color: Colors.amber),
+                        ),
+                        SizedBox(height: 10,),
+                        Container(
+                          height:110,
+                          width: 110,
+                          child: Text('AHHHJ'),
+                          decoration: BoxDecoration(color: Colors.amber),
+                        ),
+                      ],
+                    ),
+                    Container(
+                      height: 110,
+                      width: 110,
+                      child: Text('AHHHJ'),
+                      decoration: BoxDecoration(color: const Color.fromARGB(255, 240, 239, 237)),
+                    ),
+                
+                  
+               
+                  ],
+                ),
+              ]),
         ],
       ),
     );
