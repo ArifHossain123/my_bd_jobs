@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -173,39 +175,8 @@ class _HomePageState extends State<HomePage> {
           //       ),
           //     ],
           //   ),
-          //   child: Padding(
-          //     padding: const EdgeInsets.symmetric(horizontal: 10),
-          //     child: Column(
-          //       mainAxisAlignment: MainAxisAlignment.start,
-          //       crossAxisAlignment: CrossAxisAlignment.start,
-          //       children: [
-          //         Container(
-          //           child: const Text(
-          //             '0',
-          //             style: TextStyle(
-          //               color: Colors.black,
-          //               fontSize: 30,
-          //             ),
-          //           ),
-          //         ),
-          //         SizedBox(height: 10),
-          //         Row(
-          //           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          //           children: [
-          //             Container(
-          //               child: const Text(
-          //                 'Applied\nJobs',
-          //               ),
-          //             ),
-          //           const  Icon(
-          //               Icons.assignment_turned_in,
-          //             )
-          //           ],
-          //         )
-          //       ],
-          //     ),
-          //   ),
-          // ),
+
+          //
           // Row(
           //   children: [
           //     Container(
@@ -225,12 +196,6 @@ class _HomePageState extends State<HomePage> {
           //           ],
           //         ),
 
-          //     ],
-          //   ),
-
-          // ],
-          // ),
-          // );
           const SizedBox(
             height: 10,
           ),
@@ -249,8 +214,8 @@ class _HomePageState extends State<HomePage> {
                         child: Container(
                           height: 110,
                           width: 120,
-                          decoration: BoxDecoration(
-                              color: const Color.fromARGB(255, 227, 205, 205)),
+                          decoration: const BoxDecoration(
+                              color: Color.fromARGB(255, 227, 205, 205)),
                           child: Padding(
                             padding: const EdgeInsets.all(5.0),
                             child: Column(
@@ -266,7 +231,7 @@ class _HomePageState extends State<HomePage> {
                                     ),
                                   ),
                                 ),
-                                SizedBox(height: 10),
+                                const SizedBox(height: 10),
                                 Row(
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceBetween,
@@ -278,7 +243,7 @@ class _HomePageState extends State<HomePage> {
                                     ),
                                     const Icon(
                                       Icons.assignment_turned_in,
-                                      color:  Color.fromARGB(255, 174, 8, 110),
+                                      color: Color.fromARGB(255, 174, 8, 110),
                                     )
                                   ],
                                 )
@@ -295,8 +260,8 @@ class _HomePageState extends State<HomePage> {
                         child: Container(
                           height: 110,
                           width: 120,
-                          decoration: BoxDecoration(
-                              color: const Color.fromARGB(255, 227, 205, 205)),
+                          decoration: const BoxDecoration(
+                              color: Color.fromARGB(255, 227, 205, 205)),
                           child: Padding(
                             padding: const EdgeInsets.all(5.0),
                             child: Column(
@@ -312,7 +277,7 @@ class _HomePageState extends State<HomePage> {
                                     ),
                                   ),
                                 ),
-                                SizedBox(height: 10),
+                                const SizedBox(height: 10),
                                 Row(
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceBetween,
@@ -342,8 +307,8 @@ class _HomePageState extends State<HomePage> {
                         child: Container(
                           height: 110,
                           width: 120,
-                          decoration: BoxDecoration(
-                              color: const Color.fromARGB(255, 227, 205, 205)),
+                          decoration: const BoxDecoration(
+                              color: Color.fromARGB(255, 227, 205, 205)),
                           child: Padding(
                             padding: const EdgeInsets.all(5.0),
                             child: Column(
@@ -359,7 +324,7 @@ class _HomePageState extends State<HomePage> {
                                     ),
                                   ),
                                 ),
-                                SizedBox(height: 10),
+                                const SizedBox(height: 10),
                                 Row(
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceBetween,
@@ -371,7 +336,7 @@ class _HomePageState extends State<HomePage> {
                                     ),
                                     const Icon(
                                       Icons.send,
-                                      color:  Color.fromARGB(255, 174, 8, 110),
+                                      color: Color.fromARGB(255, 174, 8, 110),
                                     )
                                   ],
                                 )
@@ -388,8 +353,8 @@ class _HomePageState extends State<HomePage> {
                         child: Container(
                           height: 110,
                           width: 120,
-                          decoration: BoxDecoration(
-                              color: const Color.fromARGB(255, 227, 205, 205)),
+                          decoration: const BoxDecoration(
+                              color: Color.fromARGB(255, 227, 205, 205)),
                           child: Padding(
                             padding: const EdgeInsets.all(5.0),
                             child: Column(
@@ -405,7 +370,7 @@ class _HomePageState extends State<HomePage> {
                                     ),
                                   ),
                                 ),
-                                SizedBox(height: 10),
+                                const SizedBox(height: 10),
                                 Row(
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceBetween,
@@ -417,7 +382,7 @@ class _HomePageState extends State<HomePage> {
                                     ),
                                     const Icon(
                                       Icons.favorite,
-                                      color:  Color.fromARGB(255, 174, 8, 110),
+                                      color: Color.fromARGB(255, 174, 8, 110),
                                     )
                                   ],
                                 )
@@ -434,8 +399,8 @@ class _HomePageState extends State<HomePage> {
                     child: Container(
                       height: 110,
                       width: 120,
-                      decoration: BoxDecoration(
-                          color: const Color.fromARGB(255, 227, 205, 205)),
+                      decoration: const BoxDecoration(
+                          color: Color.fromARGB(255, 227, 205, 205)),
                       child: Padding(
                         padding: const EdgeInsets.all(5.0),
                         child: Column(
@@ -451,7 +416,7 @@ class _HomePageState extends State<HomePage> {
                                 ),
                               ),
                             ),
-                            SizedBox(height: 10),
+                            const SizedBox(height: 10),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
@@ -462,7 +427,7 @@ class _HomePageState extends State<HomePage> {
                                 ),
                                 const Icon(
                                   Icons.star,
-                                  color:  Color.fromARGB(255, 174, 8, 110),
+                                  color: Color.fromARGB(255, 174, 8, 110),
                                 )
                               ],
                             )
@@ -474,6 +439,12 @@ class _HomePageState extends State<HomePage> {
                 ],
               ),
             ],
+          ),
+        const  Divider(
+            endIndent: 20,
+            indent: 20,
+            color:  Color.fromARGB(255, 179, 172, 171),
+            thickness: 1,
           ),
         ],
       ),
