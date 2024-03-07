@@ -157,53 +157,160 @@ class _HomePageState extends State<HomePage> {
             ],
           ),
           //Applied Jobs
-          Container(
-            width: 150,
-            height: 100,
-            decoration: BoxDecoration(
-              color: const Color.fromARGB(255, 222, 235, 245),
-              borderRadius: BorderRadius.circular(15),
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.grey.withOpacity(.8),
-                  spreadRadius: 2,
-                  blurRadius: 10,
-                  offset: const Offset(0, 3),
-                ),
-              ],
-            ),
-            child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 10),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.start,
+
+          // Container(
+          //   width: 150,
+          //   height: 100,
+          //   decoration: BoxDecoration(
+          //     color: const Color.fromARGB(255, 222, 235, 245),
+          //     borderRadius: BorderRadius.circular(15),
+          //     boxShadow: [
+          //       BoxShadow(
+          //         color: Colors.grey.withOpacity(.8),
+          //         spreadRadius: 2,
+          //         blurRadius: 10,
+          //         offset: const Offset(0, 3),
+          //       ),
+          //     ],
+          //   ),
+          //   child: Padding(
+          //     padding: const EdgeInsets.symmetric(horizontal: 10),
+          //     child: Column(
+          //       mainAxisAlignment: MainAxisAlignment.start,
+          //       crossAxisAlignment: CrossAxisAlignment.start,
+          //       children: [
+          //         Container(
+          //           child: const Text(
+          //             '0',
+          //             style: TextStyle(
+          //               color: Colors.black,
+          //               fontSize: 30,
+          //             ),
+          //           ),
+          //         ),
+          //         SizedBox(height: 10),
+          //         Row(
+          //           mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          //           children: [
+          //             Container(
+          //               child: const Text(
+          //                 'Applied\nJobs',
+          //               ),
+          //             ),
+          //           const  Icon(
+          //               Icons.assignment_turned_in,
+          //             )
+          //           ],
+          //         )
+          //       ],
+          //     ),
+          //   ),
+          // ),
+          // Row(
+          //   children: [
+          //     Container(
+
+          //         width: 1,
+          //         height: 100,
+          //         decoration: BoxDecoration(
+          //           color: const Color.fromARGB(255, 222, 235, 245),
+          //           borderRadius: BorderRadius.circular(15),
+          //           boxShadow: [
+          //             BoxShadow(
+          //               color: Colors.grey.withOpacity(.8),
+          //               spreadRadius: 2,
+          //               blurRadius: 10,
+          //               offset: const Offset(0, 3),
+          //             ),
+          //           ],
+          //         ),
+          //         child: Padding(
+          //           padding: const EdgeInsets.symmetric(horizontal: 10),
+          //           child: Column(
+          //             mainAxisAlignment: MainAxisAlignment.start,
+          //             crossAxisAlignment: CrossAxisAlignment.start,
+          //             children: [
+          //               Container(
+          //                 child: const Text(
+          //                   '0',
+          //                   style: TextStyle(
+          //                     color: Colors.black,
+          //                     fontSize: 30,
+          //                   ),
+          //                 ),
+          //               ),
+          //               SizedBox(height: 10),
+          //               Row(
+          //                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          //                 children: [
+          //                   Container(
+          //                     child: const Text(
+          //                       'Applied\nJobs',
+          //                     ),
+          //                   ),
+          //                   const Icon(
+          //                     Icons.assignment_turned_in,
+          //                   )
+          //                 ],
+          //               )
+          //             ],
+          //           ),
+          //         ),
+          //   //       ),
+          //     ],
+          //   ),
+
+          // ],
+          // ),
+          // );
+          SizedBox(
+            height: 10,
+          ),
+          ListView(
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Container(
-                    child: const Text(
-                      '0',
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 30,
-                      ),
-                    ),
+                    height: 50,
+                    width: 50,
+                    child: Text('AHHHJ'),
+                    decoration: BoxDecoration(color: Colors.amber),
                   ),
-                  SizedBox(height: 10),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Container(
-                        child: Text(
-                          'Applied\nJobs',
-                        ),
-                      ),
-                      Icon(
-                        Icons.assignment_turned_in,
-                      )
-                    ],
-                  )
+                  Container(
+                    height: 50,
+                    width: 50,
+                    child: Text('AHHHJ'),
+                    decoration: BoxDecoration(color: Colors.amber),
+                  ),
+                  Container(
+                    height: 50,
+                    width: 50,
+                    child: Text('AHHHJ'),
+                    decoration: BoxDecoration(color: Colors.amber),
+                  ),
+                  Container(
+                    height: 50,
+                    width: 50,
+                    child: Text('AHHHJ'),
+                    decoration: BoxDecoration(color: Colors.amber),
+                  ),
+                  Container(
+                    height: 50,
+                    width: 50,
+                    child: Text('AHHHJ'),
+                    decoration: BoxDecoration(color: Colors.amber),
+                  ),
+                  Container(
+                    height: 50,
+                    width: 50,
+                    child: Text('AHHHJ'),
+                    decoration: BoxDecoration(color: Colors.amber),
+                  ),
                 ],
               ),
-            ),
+            ],
           ),
         ],
       ),
