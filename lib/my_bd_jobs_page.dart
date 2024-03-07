@@ -224,102 +224,252 @@ class _HomePageState extends State<HomePage> {
           //             ),
           //           ],
           //         ),
-          //         child: Padding(
-          //           padding: const EdgeInsets.symmetric(horizontal: 10),
-          //           child: Column(
-          //             mainAxisAlignment: MainAxisAlignment.start,
-          //             crossAxisAlignment: CrossAxisAlignment.start,
-          //             children: [
-          //               Container(
-          //                 child: const Text(
-          //                   '0',
-          //                   style: TextStyle(
-          //                     color: Colors.black,
-          //                     fontSize: 30,
-          //                   ),
-          //                 ),
-          //               ),
-          //               SizedBox(height: 10),
-          //               Row(
-          //                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          //                 children: [
-          //                   Container(
-          //                     child: const Text(
-          //                       'Applied\nJobs',
-          //                     ),
-          //                   ),
-          //                   const Icon(
-          //                     Icons.assignment_turned_in,
-          //                   )
-          //                 ],
-          //               )
-          //             ],
-          //           ),
-          //         ),
-          //   //       ),
+
           //     ],
           //   ),
 
           // ],
           // ),
           // );
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           ListView(
-              physics: NeverScrollableScrollPhysics(),
-              shrinkWrap: true,
-              children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Column(
-                      children: [
-                        Container(
-                          height:110,
-                          width: 110,
-                          child: Text('AHHHJ'),
-                          decoration: BoxDecoration(color: Colors.amber),
-                        ),
-                        SizedBox(height: 10,),
-                        Container(
+            physics: const NeverScrollableScrollPhysics(),
+            shrinkWrap: true,
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Column(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(5.0),
+                        child: Container(
                           height: 110,
-                          width: 110,
-                          child: Text('AHHHJ'),
-                          decoration: BoxDecoration(color: Colors.amber),
+                          width: 120,
+                          decoration: BoxDecoration(
+                              color: const Color.fromARGB(255, 227, 205, 205)),
+                          child: Padding(
+                            padding: const EdgeInsets.all(5.0),
+                            child: Column(
+                              //mainAxisAlignment: MainAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Container(
+                                  child: const Text(
+                                    '0',
+                                    style: TextStyle(
+                                      color: Colors.black,
+                                      fontSize: 30,
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(height: 10),
+                                Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Container(
+                                      child: const Text(
+                                        'Shortlisted\nJobs',
+                                      ),
+                                    ),
+                                    const Icon(
+                                      Icons.assignment_turned_in,
+                                    )
+                                  ],
+                                )
+                              ],
+                            ),
+                          ),
                         ),
-                      ],
-                    ),
-                    Column(
-                      children: [
-                        Container(
+                      ),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(5.0),
+                        child: Container(
                           height: 110,
-                          width: 110,
-                          child: Text('AHHHJ'),
-                          decoration: BoxDecoration(color: Colors.amber),
+                          width: 120,
+                          decoration: BoxDecoration(
+                              color: const Color.fromARGB(255, 227, 205, 205)),
+                          child: Padding(
+                            padding: const EdgeInsets.all(5.0),
+                            child: Column(
+                              //mainAxisAlignment: MainAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Container(
+                                  child: const Text(
+                                    '0',
+                                    style: TextStyle(
+                                      color: Colors.black,
+                                      fontSize: 30,
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(height: 10),
+                                Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Container(
+                                      child: const Text(
+                                        'Shortlisted\nJobs',
+                                      ),
+                                    ),
+                                    const Icon(
+                                      Icons.assignment_turned_in,
+                                    )
+                                  ],
+                                )
+                              ],
+                            ),
+                          ),
                         ),
-                        SizedBox(height: 10,),
-                        Container(
-                          height:110,
-                          width: 110,
-                          child: Text('AHHHJ'),
-                          decoration: BoxDecoration(color: Colors.amber),
+                      ),
+                    ],
+                  ),
+                  Column(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(5.0),
+                        child: Container(
+                          height: 110,
+                          width: 120,
+                          decoration: BoxDecoration(
+                              color: const Color.fromARGB(255, 227, 205, 205)),
+                          child: Padding(
+                            padding: const EdgeInsets.all(5.0),
+                            child: Column(
+                              //mainAxisAlignment: MainAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Container(
+                                  child: const Text(
+                                    '0',
+                                    style: TextStyle(
+                                      color: Colors.black,
+                                      fontSize: 30,
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(height: 10),
+                                Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Container(
+                                      child: const Text(
+                                        'Shortlisted\nJobs',
+                                      ),
+                                    ),
+                                    const Icon(
+                                      Icons.assignment_turned_in,
+                                    )
+                                  ],
+                                )
+                              ],
+                            ),
+                          ),
                         ),
-                      ],
-                    ),
-                    Container(
+                      ),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(5.0),
+                        child: Container(
+                          height: 110,
+                          width: 120,
+                          decoration: BoxDecoration(
+                              color: const Color.fromARGB(255, 227, 205, 205)),
+                          child: Padding(
+                            padding: const EdgeInsets.all(5.0),
+                            child: Column(
+                              //mainAxisAlignment: MainAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Container(
+                                  child: const Text(
+                                    '0',
+                                    style: TextStyle(
+                                      color: Colors.black,
+                                      fontSize: 30,
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(height: 10),
+                                Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Container(
+                                      child: const Text(
+                                        'Shortlisted\nJobs',
+                                      ),
+                                    ),
+                                    const Icon(
+                                      Icons.assignment_turned_in,
+                                    )
+                                  ],
+                                )
+                              ],
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                  //3rd
+                  Padding(
+                    padding: const EdgeInsets.all(5.0),
+                    child: Container(
                       height: 110,
-                      width: 110,
-                      child: Text('AHHHJ'),
-                      decoration: BoxDecoration(color: const Color.fromARGB(255, 240, 239, 237)),
+                      width: 120,
+                      decoration: BoxDecoration(
+                          color: const Color.fromARGB(255, 227, 205, 205)),
+                      child: Padding(
+                        padding: const EdgeInsets.all(5.0),
+                        child: Column(
+                          //mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Container(
+                              child: const Text(
+                                '0',
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 30,
+                                ),
+                              ),
+                            ),
+                            SizedBox(height: 10),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Container(
+                                  child: const Text(
+                                    'Shortlisted\nJobs',
+                                  ),
+                                ),
+                                const Icon(
+                                  Icons.assignment_turned_in,
+                                )
+                              ],
+                            )
+                          ],
+                        ),
+                      ),
                     ),
-                
-                  
-               
-                  ],
-                ),
-              ]),
+                  ),
+                ],
+              ),
+            ],
+          ),
         ],
       ),
     );
