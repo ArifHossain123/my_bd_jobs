@@ -448,7 +448,7 @@ class _HomePageState extends State<HomePage> {
 
           //Employers Activities
           Container(
-            child:const Text(
+            child: const Text(
               'Employers Activities',
               style: TextStyle(
                 fontSize: 24,
@@ -456,17 +456,20 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
           ),
-       const   SizedBox(
+          const SizedBox(
             height: 10,
           ),
+          
           Container(
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+             // crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Column(
                   children: [
                     Container(
                       height: 110,
-                      width: 110,
+                      width: 180,
                       decoration: const BoxDecoration(
                           color: Color.fromARGB(255, 227, 205, 205)),
                       child: Padding(
@@ -505,7 +508,49 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ],
                 ),
-                Column(),
+                Column(
+                  children: [
+                    Container(
+                      height: 110,
+                      width: 180,
+                      decoration: const BoxDecoration(
+                          color: Color.fromARGB(255, 227, 205, 205)),
+                      child: Padding(
+                        padding: const EdgeInsets.all(5.0),
+                        child: Column(
+                          //mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Container(
+                              child: const Text(
+                                '0',
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 30,
+                                ),
+                              ),
+                            ),
+                            const SizedBox(height: 10),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Container(
+                                  child: const Text(
+                                    'Shortlisted\nJobs',
+                                  ),
+                                ),
+                                const Icon(
+                                  Icons.star,
+                                  color: Color.fromARGB(255, 174, 8, 110),
+                                )
+                              ],
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
               ],
             ),
           ),
