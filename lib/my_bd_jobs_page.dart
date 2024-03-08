@@ -459,11 +459,11 @@ class _HomePageState extends State<HomePage> {
           const SizedBox(
             height: 10,
           ),
-          
+
           Container(
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
-             // crossAxisAlignment: CrossAxisAlignment.start,
+              // crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Column(
                   children: [
@@ -493,11 +493,11 @@ class _HomePageState extends State<HomePage> {
                               children: [
                                 Container(
                                   child: const Text(
-                                    'Shortlisted\nJobs',
+                                    'Profile\nView',
                                   ),
                                 ),
                                 const Icon(
-                                  Icons.star,
+                                  Icons.visibility,
                                   color: Color.fromARGB(255, 174, 8, 110),
                                 )
                               ],
@@ -514,7 +514,8 @@ class _HomePageState extends State<HomePage> {
                       height: 110,
                       width: 180,
                       decoration: const BoxDecoration(
-                          color: Color.fromARGB(255, 227, 205, 205)),
+                        color: Color.fromARGB(255, 247, 246, 246),
+                      ),
                       child: Padding(
                         padding: const EdgeInsets.all(5.0),
                         child: Column(
@@ -536,11 +537,11 @@ class _HomePageState extends State<HomePage> {
                               children: [
                                 Container(
                                   child: const Text(
-                                    'Shortlisted\nJobs',
+                                    'Employer\nMessage',
                                   ),
                                 ),
                                 const Icon(
-                                  Icons.star,
+                                  Icons.message,
                                   color: Color.fromARGB(255, 174, 8, 110),
                                 )
                               ],
@@ -555,6 +556,9 @@ class _HomePageState extends State<HomePage> {
             ),
           ),
         ],
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
       ),
     );
   }
