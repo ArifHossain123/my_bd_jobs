@@ -133,17 +133,17 @@ class _HomePageState extends State<HomePage> {
                             width: 392,
                             decoration: BoxDecoration(
                               border: Border.all(
-                                  width: 1,
-                                  color:
-                                      const Color.fromARGB(255, 220, 219, 219)),
-                              color: const Color.fromARGB(255, 250, 237, 237),
+                                width: 1,
+                                color: const Color.fromARGB(255, 220, 219, 219),
+                              ),
+                              color: Color.fromARGB(255, 252, 233, 233),
                             ),
                             padding: const EdgeInsets.only(left: 15, top: 7),
                             child: const Text(
                               'My Status',
                               textAlign: TextAlign.left,
                               style: TextStyle(
-                                color: Colors.red,
+                                color: Color.fromARGB(207, 250, 87, 87),
                                 fontSize: 22,
                               ),
                             ),
@@ -157,43 +157,6 @@ class _HomePageState extends State<HomePage> {
             ],
           ),
           //Applied Jobs
-
-          // Container(
-          //   width: 150,
-          //   height: 100,
-          //   decoration: BoxDecoration(
-          //     color: const Color.fromARGB(255, 222, 235, 245),
-          //     borderRadius: BorderRadius.circular(15),
-          //     boxShadow: [
-          //       BoxShadow(
-          //         color: Colors.grey.withOpacity(.8),
-          //         spreadRadius: 2,
-          //         blurRadius: 10,
-          //         offset: const Offset(0, 3),
-          //       ),
-          //     ],
-          //   ),
-
-          //
-          // Row(
-          //   children: [
-          //     Container(
-
-          //         width: 1,
-          //         height: 100,
-          //         decoration: BoxDecoration(
-          //           color: const Color.fromARGB(255, 222, 235, 245),
-          //           borderRadius: BorderRadius.circular(15),
-          //           boxShadow: [
-          //             BoxShadow(
-          //               color: Colors.grey.withOpacity(.8),
-          //               spreadRadius: 2,
-          //               blurRadius: 10,
-          //               offset: const Offset(0, 3),
-          //             ),
-          //           ],
-          //         ),
-
           const SizedBox(
             height: 10,
           ),
@@ -621,13 +584,14 @@ class _HomePageState extends State<HomePage> {
                         ),
                       ),
                     ),
-                    
                   ],
                 ),
               ],
             ),
           ),
-          SizedBox(height: 10,),
+          SizedBox(
+            height: 10,
+          ),
           const Divider(
             endIndent: 20,
             indent: 20,
