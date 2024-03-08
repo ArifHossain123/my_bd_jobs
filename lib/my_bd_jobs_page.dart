@@ -120,6 +120,10 @@ class _HomePageState extends State<HomePage> {
           const SizedBox(
             height: 10,
           ),
+          TabBar(tabs: <Widget>[
+            Tab(),
+            Tab(),
+          ]),
           Column(
             children: [
               Row(
