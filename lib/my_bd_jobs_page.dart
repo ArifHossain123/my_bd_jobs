@@ -209,11 +209,22 @@ class _HomePageState extends State<HomePage> {
                     children: [
                       Padding(
                         padding: const EdgeInsets.all(5.0),
+                        ////////////////////////////////
                         child: Container(
                           height: 110,
                           width: 120,
-                          decoration: const BoxDecoration(
-                              color: Color.fromARGB(255, 227, 205, 205)),
+                          decoration: BoxDecoration(
+                            color: const Color.fromARGB(255, 222, 235, 245),
+                            borderRadius: BorderRadius.circular(15),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.grey.withOpacity(.8),
+                                spreadRadius: 2,
+                                blurRadius: 10,
+                                offset: const Offset(0, 3),
+                              ),
+                            ],
+                          ),
                           child: Padding(
                             padding: const EdgeInsets.all(5.0),
                             child: Column(
@@ -253,13 +264,24 @@ class _HomePageState extends State<HomePage> {
                       const SizedBox(
                         height: 10,
                       ),
+                      ///////////////////////////////
                       Padding(
                         padding: const EdgeInsets.all(5.0),
                         child: Container(
                           height: 110,
                           width: 120,
-                          decoration: const BoxDecoration(
-                              color: Color.fromARGB(255, 227, 205, 205)),
+                          decoration: BoxDecoration(
+                            color: const Color.fromARGB(255, 222, 235, 245),
+                            borderRadius: BorderRadius.circular(15),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.grey.withOpacity(.8),
+                                spreadRadius: 2,
+                                blurRadius: 10,
+                                offset: const Offset(0, 3),
+                              ),
+                            ],
+                          ),
                           child: Padding(
                             padding: const EdgeInsets.all(5.0),
                             child: Column(
@@ -305,8 +327,18 @@ class _HomePageState extends State<HomePage> {
                         child: Container(
                           height: 110,
                           width: 120,
-                          decoration: const BoxDecoration(
-                              color: Color.fromARGB(255, 227, 205, 205)),
+                          decoration: BoxDecoration(
+                            color: const Color.fromARGB(255, 222, 235, 245),
+                            borderRadius: BorderRadius.circular(15),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.grey.withOpacity(.8),
+                                spreadRadius: 2,
+                                blurRadius: 10,
+                                offset: const Offset(0, 3),
+                              ),
+                            ],
+                          ),
                           child: Padding(
                             padding: const EdgeInsets.all(5.0),
                             child: Column(
@@ -351,8 +383,18 @@ class _HomePageState extends State<HomePage> {
                         child: Container(
                           height: 110,
                           width: 120,
-                          decoration: const BoxDecoration(
-                              color: Color.fromARGB(255, 227, 205, 205)),
+                          decoration: BoxDecoration(
+                            color: const Color.fromARGB(255, 222, 235, 245),
+                            borderRadius: BorderRadius.circular(15),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.grey.withOpacity(.8),
+                                spreadRadius: 2,
+                                blurRadius: 10,
+                                offset: const Offset(0, 3),
+                              ),
+                            ],
+                          ),
                           child: Padding(
                             padding: const EdgeInsets.all(5.0),
                             child: Column(
@@ -396,9 +438,19 @@ class _HomePageState extends State<HomePage> {
                     padding: const EdgeInsets.all(5.0),
                     child: Container(
                       height: 110,
-                      width: 110,
-                      decoration: const BoxDecoration(
-                          color: Color.fromARGB(255, 227, 205, 205)),
+                      width: 120,
+                      decoration: BoxDecoration(
+                        color: const Color.fromARGB(255, 222, 235, 245),
+                        borderRadius: BorderRadius.circular(15),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey.withOpacity(.8),
+                            spreadRadius: 2,
+                            blurRadius: 10,
+                            offset: const Offset(0, 3),
+                          ),
+                        ],
+                      ),
                       child: Padding(
                         padding: const EdgeInsets.all(5.0),
                         child: Column(
@@ -470,8 +522,18 @@ class _HomePageState extends State<HomePage> {
                     Container(
                       height: 110,
                       width: 180,
-                      decoration: const BoxDecoration(
-                          color: Color.fromARGB(255, 227, 205, 205)),
+                      decoration: BoxDecoration(
+                        color: const Color.fromARGB(255, 222, 235, 245),
+                        borderRadius: BorderRadius.circular(15),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey.withOpacity(.8),
+                            spreadRadius: 2,
+                            blurRadius: 10,
+                            offset: const Offset(0, 3),
+                          ),
+                        ],
+                      ),
                       child: Padding(
                         padding: const EdgeInsets.all(5.0),
                         child: Column(
@@ -513,8 +575,17 @@ class _HomePageState extends State<HomePage> {
                     Container(
                       height: 110,
                       width: 180,
-                      decoration: const BoxDecoration(
-                        color: Color.fromARGB(255, 247, 246, 246),
+                      decoration: BoxDecoration(
+                        color: const Color.fromARGB(255, 222, 235, 245),
+                        borderRadius: BorderRadius.circular(15),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey.withOpacity(.8),
+                            spreadRadius: 2,
+                            blurRadius: 10,
+                            offset: const Offset(0, 3),
+                          ),
+                        ],
                       ),
                       child: Padding(
                         padding: const EdgeInsets.all(5.0),
@@ -550,15 +621,29 @@ class _HomePageState extends State<HomePage> {
                         ),
                       ),
                     ),
+                    
                   ],
                 ),
               ],
             ),
           ),
+          SizedBox(height: 10,),
+          const Divider(
+            endIndent: 20,
+            indent: 20,
+            color: Color.fromARGB(255, 179, 172, 171),
+            thickness: 1,
+          ),
         ],
       ),
+      //floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
+        backgroundColor: Colors.lightGreen,
+        child: Icon(
+          Icons.note_add,
+          color: Colors.white,
+        ),
       ),
     );
   }
