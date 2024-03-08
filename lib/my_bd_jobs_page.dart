@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -398,7 +396,7 @@ class _HomePageState extends State<HomePage> {
                     padding: const EdgeInsets.all(5.0),
                     child: Container(
                       height: 110,
-                      width: 120,
+                      width: 110,
                       decoration: const BoxDecoration(
                           color: Color.fromARGB(255, 227, 205, 205)),
                       child: Padding(
@@ -440,11 +438,76 @@ class _HomePageState extends State<HomePage> {
               ),
             ],
           ),
-        const  Divider(
+          //divider
+          const Divider(
             endIndent: 20,
             indent: 20,
-            color:  Color.fromARGB(255, 179, 172, 171),
+            color: Color.fromARGB(255, 179, 172, 171),
             thickness: 1,
+          ),
+
+          //Employers Activities
+          Container(
+            child:const Text(
+              'Employers Activities',
+              style: TextStyle(
+                fontSize: 24,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
+       const   SizedBox(
+            height: 10,
+          ),
+          Container(
+            child: Row(
+              children: [
+                Column(
+                  children: [
+                    Container(
+                      height: 110,
+                      width: 110,
+                      decoration: const BoxDecoration(
+                          color: Color.fromARGB(255, 227, 205, 205)),
+                      child: Padding(
+                        padding: const EdgeInsets.all(5.0),
+                        child: Column(
+                          //mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Container(
+                              child: const Text(
+                                '0',
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 30,
+                                ),
+                              ),
+                            ),
+                            const SizedBox(height: 10),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Container(
+                                  child: const Text(
+                                    'Shortlisted\nJobs',
+                                  ),
+                                ),
+                                const Icon(
+                                  Icons.star,
+                                  color: Color.fromARGB(255, 174, 8, 110),
+                                )
+                              ],
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                Column(),
+              ],
+            ),
           ),
         ],
       ),
