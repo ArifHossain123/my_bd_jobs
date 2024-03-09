@@ -172,10 +172,13 @@ class _HomePageState extends State<HomePage> {
           // ),
           DefaultTabController(
             length: 2,
+            
             child: Column(
               children: <Widget>[
                 Material(
+                  elevation: 0,
                   child: Container(
+                    
                     height: 55,
                     decoration: const BoxDecoration(
                       color: Color.fromARGB(255, 248, 240, 228),
@@ -189,26 +192,30 @@ class _HomePageState extends State<HomePage> {
                       // ],
                     ),
                     child: TabBar(
-                      labelColor: Colors.redAccent,
+                      labelColor:const Color.fromARGB(255, 174, 8, 110),
                       physics: const ClampingScrollPhysics(),
-                      // padding: const EdgeInsets.all(1),
+                      
+                      
 
-                      unselectedLabelColor: Color.fromARGB(255, 8, 8, 8),
+                      unselectedLabelColor:const Color.fromARGB(255, 1, 0, 0),
                       indicatorSize: TabBarIndicatorSize.label,
-                      indicator: const BoxDecoration(
-                          // borderRadius: BorderRadius.circular(null),
-                          // color: Colors.pinkAccent,
-                          ),
+                      // indicator: const BoxDecoration(
+                          
+                      //     color: Colors.black,
+                      //     ),
                       tabs: [
                         Tab(
                           child: Container(
-                            decoration: const BoxDecoration(),
+                            
                             height: 55,
                             child: const Align(
                               alignment: Alignment.center,
                               child: Text(
-                                'My Status', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-                                
+                                'My Status',
+                                style: TextStyle(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold,
+                                ),
                               ),
                             ),
                           ),
@@ -219,7 +226,12 @@ class _HomePageState extends State<HomePage> {
                             decoration: const BoxDecoration(),
                             child: const Align(
                               alignment: Alignment.center,
-                              child: Text('Bdjobs Pro Status'),
+                              child: Text('Bdjobs Pro Status',
+                                style: TextStyle(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
                             ),
                           ),
                         ),
