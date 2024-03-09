@@ -120,49 +120,33 @@ class _HomePageState extends State<HomePage> {
           const SizedBox(
             height: 10,
           ),
-          TabBar(tabs: <Widget>[
-            Tab(),
-            Tab(),
-          ]),
+          Divider(
+            thickness: 1,
+          ),
+          // TabBarView(children: <Widget>[
+          //   Tab(
+          //     text: 'My Status',
+          //   ),
+          //   Tab(
+          //     text: 'Bdjobs Pro Status',
+          //   ),
+          // ]),
           Column(
-            children: [
-              Row(
-                children: [
-                  Column(
-                    children: [
-                      Row(
-                        children: [
-                          Container(
-                            height: 50,
-                            width: 392,
-                            decoration: BoxDecoration(
-                              border: Border.all(
-                                width: 1,
-                                color: const Color.fromARGB(255, 220, 219, 219),
-                              ),
-                              color: Color.fromARGB(255, 252, 233, 233),
-                            ),
-                            padding: const EdgeInsets.only(left: 15, top: 7),
-                            child: const Text(
-                              'My Status',
-                              textAlign: TextAlign.left,
-                              style: TextStyle(
-                                color: Color.fromARGB(207, 250, 87, 87),
-                                fontSize: 22,
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ],
-                  ),
-                ],
+            children: <Widget>[
+              SizedBox(
+                height: 10,
+              ),
+              Card(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12),
+                ),
               ),
             ],
           ),
+
           //Applied Jobs
           const SizedBox(
-            height: 10,
+            height: 100,
           ),
           ListView(
             physics: const NeverScrollableScrollPhysics(),
