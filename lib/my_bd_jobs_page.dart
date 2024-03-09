@@ -172,14 +172,13 @@ class _HomePageState extends State<HomePage> {
           // ),
           DefaultTabController(
             length: 2,
-            
             child: Column(
               children: <Widget>[
                 Material(
                   elevation: 0,
                   child: Container(
-                    
                     height: 55,
+                    width: MediaQuery.of(context).size.height,
                     decoration: const BoxDecoration(
                       color: Color.fromARGB(255, 248, 240, 228),
                       // boxShadow: [
@@ -192,21 +191,18 @@ class _HomePageState extends State<HomePage> {
                       // ],
                     ),
                     child: TabBar(
-                      labelColor:const Color.fromARGB(255, 174, 8, 110),
+                      labelColor: const Color.fromARGB(255, 174, 8, 110),
                       physics: const ClampingScrollPhysics(),
-                      
-                      
 
-                      unselectedLabelColor:const Color.fromARGB(255, 1, 0, 0),
-                      indicatorSize: TabBarIndicatorSize.label,
+                      unselectedLabelColor: const Color.fromARGB(255, 1, 0, 0),
+                      indicatorSize: TabBarIndicatorSize.tab,
                       // indicator: const BoxDecoration(
-                          
+
                       //     color: Colors.black,
-                      //     ),
+                      //     )
                       tabs: [
                         Tab(
                           child: Container(
-                            
                             height: 55,
                             child: const Align(
                               alignment: Alignment.center,
@@ -226,7 +222,8 @@ class _HomePageState extends State<HomePage> {
                             decoration: const BoxDecoration(),
                             child: const Align(
                               alignment: Alignment.center,
-                              child: Text('Bdjobs Pro Status',
+                              child: Text(
+                                'Bdjobs Pro Status',
                                 style: TextStyle(
                                   fontSize: 20,
                                   fontWeight: FontWeight.bold,
@@ -243,9 +240,88 @@ class _HomePageState extends State<HomePage> {
             ),
           ),
 
+          SizedBox(
+            height: 30,
+          ),
+
+          DefaultTabController(
+            length: 2,
+            child: Column(
+              children: <Widget>[
+                Material(
+                  
+                  child: Card(
+                    elevation: 5,
+                  
+                    
+                    child: Container(
+                     
+                      height: 50,
+                       width: 300,
+                      // width: MediaQuery.of(context).size.height,
+
+                    
+                      decoration: BoxDecoration(
+                        color: Color.fromARGB(255, 255, 255, 255),
+                       borderRadius: BorderRadius.circular(5),
+                        border: Border.all(
+                          width: 1,
+                          color: Color.fromARGB(255, 174, 8, 110),
+                        ),
+                      ),
+                      child: TabBar(
+                        labelColor: Color.fromARGB(255, 255, 255, 255),
+                        physics: const ClampingScrollPhysics(),
+                        unselectedLabelColor: Color.fromARGB(255, 174, 8, 110),
+                        indicatorSize: TabBarIndicatorSize.tab,
+                        indicator:  BoxDecoration(borderRadius: BorderRadius.only(),
+                          color: Color.fromARGB(255, 174, 8, 110),
+                        ),
+                        tabs: [
+                          Tab(
+                            child: Container(
+                              height: 50,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(30),
+                              ),
+                              child: const Align(
+                                alignment: Alignment.center,
+                                child: Text(
+                                  'This Month',
+                                  style: TextStyle(
+                                    fontSize: 20,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
+                          Tab(
+                            child: Container(
+                              height: 50,
+                              decoration: const BoxDecoration(),
+                              child: const Align(
+                                alignment: Alignment.center,
+                                child: Text(
+                                  'All Time',
+                                  style: TextStyle(
+                                    fontSize: 20,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+
           //Applied Jobs
           const SizedBox(
-            height: 100,
+            height: 30,
           ),
           ListView(
             physics: const NeverScrollableScrollPhysics(),
