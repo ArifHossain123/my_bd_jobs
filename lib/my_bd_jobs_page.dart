@@ -123,9 +123,7 @@ class _HomePageState extends State<HomePage> {
           const SizedBox(
             height: 10,
           ),
-          const Divider(
-            thickness: 1,
-          ),
+
           // TabBarView(children: <Widget>[
           //   Tab(
           //     text: 'My Status',
@@ -175,12 +173,61 @@ class _HomePageState extends State<HomePage> {
           DefaultTabController(
             length: 2,
             child: Column(
-              children: <Widget>[Material(
-                child:Container(
-                  height:55,
-                  color: const Color.fromARGB(255, 249, 226, 192),
+              children: <Widget>[
+                Material(
+                  child: Container(
+                    height: 55,
+                    decoration: const BoxDecoration(
+                      color: Color.fromARGB(255, 248, 240, 228),
+                      // boxShadow: [
+                      //   BoxShadow(
+                      //     color: Colors.grey,
+                      //     offset: Offset(3, 3),
+                      //     // blurRadius: 1,
+                      //     // spreadRadius: 1,
+                      //   ),
+                      // ],
+                    ),
+                    child: TabBar(
+                      labelColor: Colors.redAccent,
+                      physics: const ClampingScrollPhysics(),
+                      // padding: const EdgeInsets.all(1),
+
+                      unselectedLabelColor: Color.fromARGB(255, 8, 8, 8),
+                      indicatorSize: TabBarIndicatorSize.label,
+                      indicator: const BoxDecoration(
+                          // borderRadius: BorderRadius.circular(null),
+                          // color: Colors.pinkAccent,
+                          ),
+                      tabs: [
+                        Tab(
+                          child: Container(
+                            decoration: const BoxDecoration(),
+                            height: 55,
+                            child: const Align(
+                              alignment: Alignment.center,
+                              child: Text(
+                                'My Status', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                                
+                              ),
+                            ),
+                          ),
+                        ),
+                        Tab(
+                          child: Container(
+                            height: 55,
+                            decoration: const BoxDecoration(),
+                            child: const Align(
+                              alignment: Alignment.center,
+                              child: Text('Bdjobs Pro Status'),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
                 ),
-              ),],
+              ],
             ),
           ),
 
