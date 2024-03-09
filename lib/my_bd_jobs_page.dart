@@ -120,7 +120,7 @@ class _HomePageState extends State<HomePage> {
           const SizedBox(
             height: 10,
           ),
-          Divider(
+          const Divider(
             thickness: 1,
           ),
           // TabBarView(children: <Widget>[
@@ -133,12 +133,31 @@ class _HomePageState extends State<HomePage> {
           // ]),
           Column(
             children: <Widget>[
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               Card(
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(12),
+                ),
+                elevation: 5,
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: Colors.black.withOpacity(.3),
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  child: TabBar(
+                    indicator: BoxDecoration(
+                      borderRadius: BorderRadius.circular(12),
+                      color: Colors.orange,
+                    ),
+                    //controller: tabController,
+                    isScrollable: true,
+                    labelPadding: const EdgeInsets.symmetric(
+                      horizontal: 30,
+                    ),
+                    tabs: [],
+                  ),
                 ),
               ),
             ],
@@ -577,7 +596,7 @@ class _HomePageState extends State<HomePage> {
               ],
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           const Divider(
@@ -592,7 +611,7 @@ class _HomePageState extends State<HomePage> {
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         backgroundColor: Colors.lightGreen,
-        child: Icon(
+        child: const Icon(
           Icons.note_add,
           color: Colors.white,
         ),
