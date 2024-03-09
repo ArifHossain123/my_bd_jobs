@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
-  const HomePage({super.key});
+  const HomePage({
+    super.key,
+  });
 
   @override
   State<HomePage> createState() => _HomePageState();
@@ -10,6 +12,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
+    // TabController tabController = TabController(length: 3, vsync: this);
     return Scaffold(
       appBar: AppBar(
         titleSpacing: 18,
@@ -131,36 +134,54 @@ class _HomePageState extends State<HomePage> {
           //     text: 'Bdjobs Pro Status',
           //   ),
           // ]),
-          Column(
-            children: <Widget>[
-              const SizedBox(
-                height: 10,
-              ),
-              Card(
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(12),
+          // Column(
+          //   children: <Widget>[
+          //     const SizedBox(
+          //       height: 10,
+          //     ),
+          //     Card(
+          //       shape: RoundedRectangleBorder(
+          //         borderRadius: BorderRadius.circular(12),
+          //       ),
+          //       elevation: 5,
+          //       child: Container(
+          //         decoration: BoxDecoration(
+          //           color: Colors.black.withOpacity(.3),
+          //           borderRadius: BorderRadius.circular(12),
+          //         ),
+          //         child: TabBar(
+          //           indicator: BoxDecoration(
+          //             borderRadius: BorderRadius.circular(12),
+          //             color: Colors.orange,
+          //           ),
+          //           controller: tabController,
+          //           isScrollable: true,
+          //           labelPadding: const EdgeInsets.symmetric(
+          //             horizontal: 30,
+          //           ),
+          //           tabs: const [
+          //             Tab(
+          //               text: 'My Status',
+          //             ),
+          //             Tab(
+          //               text: 'Bdjobs Pro Status',
+          //             ),
+          //           ],
+          //         ),
+          //       ),
+          //     ),
+          //   ],
+          // ),
+          DefaultTabController(
+            length: 2,
+            child: Column(
+              children: <Widget>[Material(
+                child:Container(
+                  height:55,
+                  color: const Color.fromARGB(255, 249, 226, 192),
                 ),
-                elevation: 5,
-                child: Container(
-                  decoration: BoxDecoration(
-                    color: Colors.black.withOpacity(.3),
-                    borderRadius: BorderRadius.circular(12),
-                  ),
-                  child: TabBar(
-                    indicator: BoxDecoration(
-                      borderRadius: BorderRadius.circular(12),
-                      color: Colors.orange,
-                    ),
-                    //controller: tabController,
-                    isScrollable: true,
-                    labelPadding: const EdgeInsets.symmetric(
-                      horizontal: 30,
-                    ),
-                    tabs: [],
-                  ),
-                ),
-              ),
-            ],
+              ),],
+            ),
           ),
 
           //Applied Jobs
